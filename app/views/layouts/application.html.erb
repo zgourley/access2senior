@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Access2</title>
+  <title>Access2SeniorLiving</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="ui menu">
+  <div class="item"> <strong> <%= link_to "Access 2 Senior Living", root_path %> </strong> </div>
+  <div class="item"> <%= link_to "About", about_path %> </div>
+  <div class="item"> <%= link_to "Properties", properties_path %> </div>
+  <div class="item"> <%= link_to "Contact", contact_path %> </div>
+</div>
 <%= yield %>
 
 </body>
 </html>
+<!-- 
+<div class="ui menu">
+  <a class="item">Browse</a>
+  <a class="item">Submit</a> -->

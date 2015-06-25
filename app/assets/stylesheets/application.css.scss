@@ -1,0 +1,49 @@
+@import "semantic-ui";
+
+@import "semantic-ui/collections/menu";
+
+body {
+  background-image: url(http://www.dhr.virginia.gov/registers/Cities/Williamsburg/137-0033_Semple,James,House_1970_VLR_4th.jpg);
+  background-position: center;
+}
+
+p {
+  color: white;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+    color: #1E43FF;
+  }
+
+.ui-menu {
+  background-color: #76BDFF;
+}
+
+.ui-card > .image {
+
+  height: 290px;
+  width: 290px;
+  
+}
+
+.whitebox {
+  background-color: #2AA6FF;
+  margin-left: 8 px;
+  padding: 10px;
+  opacity: 0.9;
+  margin-right: auto;
+  margin-left: auto;
+
+    p {
+      color: white;
+    }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #1E43FF;
+  }
+
+}
+
+.boxtext {
+  margin-left: 10px;
+}

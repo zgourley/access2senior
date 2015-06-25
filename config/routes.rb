@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+
+  root "staticpages#index"
+  get "/about" => "staticpages#about"
+  get "/contact" => "staticpages#contact"
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  resources :properties
+  resources :properties, only: [:index, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
