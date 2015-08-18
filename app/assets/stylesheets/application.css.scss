@@ -19,8 +19,13 @@ p {
   background-color: #76BDFF;
 }
 
-.ui-card > .image {
+.ui.cards {
+  display: flex;
+  flex-direction:row;
+}
 
+.ui-card > .image {
+  display: inline-block;
   height: 290px;
   width: 290px;
   
@@ -33,6 +38,7 @@ p {
   opacity: 0.9;
   margin-right: auto;
   margin-left: auto;
+  vertical-align: top;
 
     p {
       color: white;

@@ -1,27 +1,32 @@
 <div class="whitebox">
   <div class="boxtext">
 
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-<h1>Featured Properties</h1>
+  <h1>Featured Properties</h1>
+  <div class="ui four cards">
 
-<% @properties.each do |property| %>
-<div class="ui cards">
-  <div class="card">
-    <a class="image">
-      <img src= <%= property.image %> >
-    </a>
-    <div class="content">
-      <a class="header"><%= property.name %></a>
-      <div class="meta">
-        <a><%= property.location %></a>
-      </div> 
-      <div class="description">
-        <%= property.description %>
-      </div>
-    </div>
-  </div>
-<% end %> 
 
-  </div>
-<div>
+  <% @properties.each do |property| %>
+  
+    <div class="card">
+      <div class="image">
+        <img src= <%= property.image %> >
+      </div> <!-- end image -->
+      <div class="content">
+        <a class="header"><%= property.name %></a>
+      </div> <!-- end content -->
+        <div class="meta">
+          <a><%= property.location %></a>
+        </div> <!-- end meta -->
+        <div class="description">
+          <%= property.description %>
+        </div> <!-- end description -->
+      
+    </div> <!-- end card -->
+  
+  <% end %> 
+  </div> <!-- end ui cards -->
+
+  </div> <!-- end boxtext-->
+<div> <!-- end whitebox -->
